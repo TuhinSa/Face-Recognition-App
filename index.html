@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Face Recognition App</h1>
+        <p>Model is trained to identify following people</p>
+        <button class="form-control btn btn-primary">Brother</button>
+        <br>
+        <button class="form-control btn btn-primary">Sister</button>
+        <br>
+        <button class="form-control btn btn-primary">Mother </button>
+        <br>
+        <button class="form-control btn btn-primary">father </button>
+        <br>
+        <label>Webcam View-</label>
+        <div id="Webcam_view"></div>
+        <br><br>
+        <div id="Captured_img"></div>
+        <button id="captureimage" onclick="captureimg()">Capture Image</button>
+        <button id="identifyimage" onclick="identifyimg()">Identify Image</button>
+    </center>
+</body>
